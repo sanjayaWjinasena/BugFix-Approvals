@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- TODO: 15 res.groups records to hand-port -->
+  <!-- Clear-DB id=113: 'Jin - PO Approvers: PO Amount > 500,000' -->
+  <!-- Clear-DB id=112: 'Jin - PO Approvers: PO Amount <= 500,000' -->
+  <!-- Clear-DB id=107: 'PR Approval' -->
+  <!-- Clear-DB id=143: 'Jin - Inv PR Approvers' -->
+  <!-- Clear-DB id=178: 'Repair Sales Unlock' -->
+  <!-- Clear-DB id=128: 'Jin - Sales - Bank Guarantee Approvers' -->
+  <!-- Clear-DB id=125: 'Jin - Sales - Credit Limit Approvers' -->
+  <!-- Clear-DB id=129: 'Jin - Sales - Credit Note Approvers' -->
+  <!-- Clear-DB id=131: 'Jin - Sales - Sales Margin Approvers' -->
+  <!-- Clear-DB id=130: 'Jin - Sales - Over Commission Approvers' -->
+  <!-- Clear-DB id=127: 'Jin - Sales - Overdue Approvers' -->
+  <!-- Clear-DB id=132: 'Jin - Sales - POS Users' -->
+  <!-- Clear-DB id=126: 'Jin - Sales - Temporary Credit Approvers' -->
+  <!-- Clear-DB id=204: 'TEST - SALES - 2' -->
+  <!-- Clear-DB id=105: 'Test_MO_MarkAsDone' -->
+</odoo>

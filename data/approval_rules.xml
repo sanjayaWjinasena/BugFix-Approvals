@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- TODO: 75 studio.approval.rule records to hand-port -->
+  <!-- Clear-DB id=65: 'Engineering Change Order (ECO)/approve (User types / Internal User) (65)' -->
+  <!-- Clear-DB id=66: 'Engineering Change Order (ECO)/action_apply (User types / Internal User) (66)' -->
+  <!-- Clear-DB id=30: 'Helpdesk Ticket/Reverse Transfer (User types / Internal User) (30)' -->
+  <!-- Clear-DB id=25: 'Journal Entry/SLS - Credit Note Approval (Sales / Credit Note Approver) (25)' -->
+  <!-- Clear-DB id=24: 'Journal Entry/SLS - Overdue Approval (Sales / Credit Note Approver) (24)' -->
+  <!-- Clear-DB id=83: 'Maintenance Request/archive_equipment_request (User types / Internal User) (83)' -->
+  <!-- Clear-DB id=100: 'Production Order/action_generate_serial (Manufacturing / Administrator) (100)' -->
+  <!-- Clear-DB id=101: 'Production Order/action_product_forecast_report (Inventory / Jin - Administrator) (101)' -->
+  <!-- Clear-DB id=91: 'Production Order/button_unbuild (Manufacturing / Jin - Manufacturing -  MO Full Writes with Unbuild) (91)' -->
+  <!-- Clear-DB id=1: 'Production Order/button_unplan (User types / Internal User) (1)' -->
+  <!-- Clear-DB id=92: 'Production Order/button_scrap (Manufacturing / Jin - Manufacturing -  MO Full Writes with Unbuild) (92)' -->
+  <!-- Clear-DB id=4: 'Production Order/button_mark_done (User types / Internal User) (4)' -->
+  <!-- Clear-DB id=3: 'Production Order/button_mark_done (User types / Internal User) (3)' -->
+  <!-- Clear-DB id=5: 'Production Order/button_mark_done (Manufacturing / Administrator) (5)' -->
+  <!-- Clear-DB id=2: 'Production Order/button_mark_done (User types / Internal User) (2)' -->
+  <!-- Clear-DB id=13: 'Purchase Order/button_confirm (PO Approval - 10,000 < Amount) (13)' -->
+  <!-- Clear-DB id=73: 'Purchase Order/button_approve (User types / Internal User) (73)' -->
+  <!-- Clear-DB id=67: 'Purchase Order/button_approve (Purchase / User) (67)' -->
+  <!-- Clear-DB id=52: 'Purchase Order/button_confirm (User types / Internal User) (52)' -->
+  <!-- Clear-DB id=87: 'Purchase Order/button_cancel (Administration / Access Rights) (87)' -->
+  <!-- Clear-DB id=53: 'Purchase Order/button_confirm (User types / Internal User) (53)' -->
+  <!-- Clear-DB id=90: 'Purchase Order/button_confirm (Purchase / Jin - PO Approvers: PO Amount > 500,000) (90)' -->
+  <!-- Clear-DB id=48: 'Purchase Order/button_approve (PO Approvals: PO Amount <= 500,000) (48)' -->
+  <!-- Clear-DB id=98: 'Purchase Order/button_approve (Purchase / Jin - PO Approvers: PO Amount <= 500,000) (98)' -->
+  <!-- Clear-DB id=70: 'Purchase Order/button_approve (Technical / Jin_PO_Creator) (70)' -->
+  <!-- Clear-DB id=16: 'Purchase Order/button_confirm (PO Approval - 10,000 < Amount) (16)' -->
+  <!-- Clear-DB id=54: 'Purchase Order/button_confirm (PO Approval: PO Amount > 500,000) (54)' -->
+  <!-- Clear-DB id=12: 'Purchase Order/button_confirm (User types / Public) (12)' -->
+  <!-- Clear-DB id=71: 'Purchase Order/button_approve (User types / Internal User) (71)' -->
+  <!-- Clear-DB id=88: 'Purchase Order/button_approve (sales / Jin - Credit Note Approvers) (88)' -->
+  <!-- Clear-DB id=15: 'Purchase Order/button_confirm (User types / Internal User) (15)' -->
+  <!-- Clear-DB id=75: 'Purchase Order/button_approve (PO Approval: PO Amount > 500,000) (75)' -->
+  <!-- Clear-DB id=89: 'Purchase Order/button_confirm (Purchase / Jin - PO Approvers: PO Amount <= 500,000) (89)' -->
+  <!-- Clear-DB id=74: 'Purchase Order/button_approve (PO Approval: PO Amount <= 500,000) (74)' -->
+  <!-- Clear-DB id=17: 'Purchase Order/button_confirm (PO Approving users) (17)' -->
+  <!-- Clear-DB id=64: 'Purchase Order/button_cancel (User types / Internal User) (64)' -->
+  <!-- Clear-DB id=72: 'Purchase Order/button_approve (Technical / Jin_PO_Creator) (72)' -->
+  <!-- Clear-DB id=69: 'Purchase Order/button_approve (User types / Internal User) (69)' -->
+  <!-- Clear-DB id=49: 'Purchase Order/button_approve (PO Approval: PO Amount > 500,000) (49)' -->
+  <!-- Clear-DB id=68: 'Purchase Order/button_approve (User types / Internal User) (68)' -->
+  <!-- Clear-DB id=7: 'Purchase Order/button_confirm (Purchase / Administrator) (7)' -->
+  <!-- Clear-DB id=14: 'Purchase Order/confirm_reminder_mail (User types / Internal User) (14)' -->
+  <!-- Clear-DB id=11: 'Purchase Order/confirm_reminder_mail (User types / Internal User) (11)' -->
+  <!-- Clear-DB id=94: 'Purchase Order (Non-Inventory)/Approve NPO (Purchase / Jin - PO Approvers: PO Amount <= 500,000) (94)' -->
+  <!-- Clear-DB id=95: 'Purchase Order (Non-Inventory)/Approve NPO (Purchase / Jin - PO Approvers: PO Amount > 500,000) (95)' -->
+  <!-- Clear-DB id=46: 'Purchase Request/Approve PR (User types / Internal User) (46)' -->
+  <!-- Clear-DB id=28: 'Purchase Request/Approve PR (Purchase / Purchase Request Approver) (28)' -->
+  <!-- Clear-DB id=29: 'Purchase Request/Approve PR (Purchase / Purchase Request Approver) (29)' -->
+  <!-- Clear-DB id=9: 'Purchase Request/Confirm PR (Purchase / PR Approval) (9)' -->
+  <!-- Clear-DB id=10: 'Purchase Request/Done PR + Copy PR to RFQ (Purchase / PR Approval) (10)' -->
+  <!-- Clear-DB id=97: 'Purchase Request (Non-Inventory)/Approve PR - Non-Inventory (Purchase / Jin - Non-Inv PR Approvers) (97)' -->
+  <!-- Clear-DB id=93: 'Purchase Request (Non-Inventory)/Approve PR - Non-Inventory (Purchase / Jin - PR Approvers) (93)' -->
+  <!-- Clear-DB id=78: 'Purchase Requisition/action_done (sales / TEST - SALES - 1) (78)' -->
+  <!-- Clear-DB id=77: 'Purchase Requisition/Request for Quotation (User types / Internal User) (77)' -->
+  <!-- Clear-DB id=33: 'Sales Order/action_cancel (User types / Internal User) (33)' -->
+  <!-- Clear-DB id=60: 'Sales Order/action_draft (User types / Internal User) (60)' -->
+  <!-- Clear-DB id=61: 'Sales Order/action_quotation_send (User types / Internal User) (61)' -->
+  <!-- Clear-DB id=21: 'Sales Order/action_quotation_send (Technical / A warning can be set on a partner (Accountt)) (21)' -->
+  <!-- Clear-DB id=47: 'Sales Order/action_unlock (Sale / Repair Sales Unlock) (47)' -->
+  <!-- Clear-DB id=51: 'Sales Order/action_unlock (Inventory / Administrator) (51)' -->
+  <!-- Clear-DB id=50: 'Sales Order/action_unlock (User types / Internal User) (50)' -->
+  <!-- Clear-DB id=23: 'Sales Order/SLS - Bank Guarantee Approval (Sales / Bank Guarantee Approver) (23)' -->
+  <!-- Clear-DB id=99: 'Sales Order/SLS - Create Customer Payment (User types / Internal User) (99)' -->
+  <!-- Clear-DB id=18: 'Sales Order/SLS - Credit Limit Approval (Sales / Credit Limit Approver) (18)' -->
+  <!-- Clear-DB id=27: 'Sales Order/SLS - Margin Approval (Sales / Margin Approver) (27)' -->
+  <!-- Clear-DB id=22: 'Sales Order/SLS - Overdue Approval (Sales / Overdue Approver) (22)' -->
+  <!-- Clear-DB id=26: 'Sales Order/SLS - Over Commission Approval (Sales / Over Commission Approver) (26)' -->
+  <!-- Clear-DB id=19: 'Sales Order/SLS - Temporary Credit Approval (Sales / Temporary Credit Approver) (19)' -->
+  <!-- Clear-DB id=20: 'Structure Master/IMP - Inactive Structure (Sales / Credit Limit Approver) (20)' -->
+  <!-- Clear-DB id=45: 'TEST02/sample server action (Technical / A warning can be set on a partner (Stock)) (45)' -->
+  <!-- Clear-DB id=76: 'TEST02/sample server action-2 (sales / TEST - SALES - 2) (76)' -->
+  <!-- Clear-DB id=44: 'TEST02/sample server action (User types / Internal User) (44)' -->
+  <!-- Clear-DB id=102: 'Transfer/action_cancel (Inventory / Jin - Administrator) (102)' -->
+  <!-- Clear-DB id=56: 'Transfer/action_open_label_layout (Administration / Access Rights) (56)' -->
+  <!-- Clear-DB id=62: 'Transfer/action_put_in_pack (User types / Internal User) (62)' -->
+</odoo>
