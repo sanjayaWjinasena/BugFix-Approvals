@@ -1,19 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <!-- TODO: 15 res.groups records to hand-port -->
-  <!-- Clear-DB id=113: 'Jin - PO Approvers: PO Amount > 500,000' -->
-  <!-- Clear-DB id=112: 'Jin - PO Approvers: PO Amount <= 500,000' -->
-  <!-- Clear-DB id=107: 'PR Approval' -->
-  <!-- Clear-DB id=143: 'Jin - Inv PR Approvers' -->
-  <!-- Clear-DB id=178: 'Repair Sales Unlock' -->
-  <!-- Clear-DB id=128: 'Jin - Sales - Bank Guarantee Approvers' -->
-  <!-- Clear-DB id=125: 'Jin - Sales - Credit Limit Approvers' -->
-  <!-- Clear-DB id=129: 'Jin - Sales - Credit Note Approvers' -->
-  <!-- Clear-DB id=131: 'Jin - Sales - Sales Margin Approvers' -->
-  <!-- Clear-DB id=130: 'Jin - Sales - Over Commission Approvers' -->
-  <!-- Clear-DB id=127: 'Jin - Sales - Overdue Approvers' -->
-  <!-- Clear-DB id=132: 'Jin - Sales - POS Users' -->
-  <!-- Clear-DB id=126: 'Jin - Sales - Temporary Credit Approvers' -->
-  <!-- Clear-DB id=204: 'TEST - SALES - 2' -->
-  <!-- Clear-DB id=105: 'Test_MO_MarkAsDone' -->
+  <!-- 15 res.groups records ported -->
+  <record id="group_113_jin_po_approvers_po_amount_500_000" model="res.groups">
+    <field name="name">Jin - PO Approvers: PO Amount &gt; 500,000</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Purchase&apos;)]"/>
+  </record>
+  <record id="group_112_jin_po_approvers_po_amount_500_000" model="res.groups">
+    <field name="name">Jin - PO Approvers: PO Amount &lt;= 500,000</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Purchase&apos;)]"/>
+  </record>
+  <record id="group_107_pr_approval" model="res.groups">
+    <field name="name">PR Approval</field>
+  </record>
+  <record id="group_143_jin_inv_pr_approvers" model="res.groups">
+    <field name="name">Jin - Inv PR Approvers</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Purchase&apos;)]"/>
+  </record>
+  <record id="group_178_repair_sales_unlock" model="res.groups">
+    <field name="name">Repair Sales Unlock</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Sale&apos;)]"/>
+  </record>
+  <record id="group_128_jin_sales_bank_guarantee_approvers" model="res.groups">
+    <field name="name">Jin - Sales - Bank Guarantee Approvers</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Sales&apos;)]"/>
+  </record>
+  <record id="group_125_jin_sales_credit_limit_approvers" model="res.groups">
+    <field name="name">Jin - Sales - Credit Limit Approvers</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Sales&apos;)]"/>
+  </record>
+  <record id="group_129_jin_sales_credit_note_approvers" model="res.groups">
+    <field name="name">Jin - Sales - Credit Note Approvers</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Sales&apos;)]"/>
+  </record>
+  <record id="group_131_jin_sales_sales_margin_approvers" model="res.groups">
+    <field name="name">Jin - Sales - Sales Margin Approvers</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Sales&apos;)]"/>
+  </record>
+  <record id="group_130_jin_sales_over_commission_approvers" model="res.groups">
+    <field name="name">Jin - Sales - Over Commission Approvers</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Sales&apos;)]"/>
+  </record>
+  <record id="group_127_jin_sales_overdue_approvers" model="res.groups">
+    <field name="name">Jin - Sales - Overdue Approvers</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Sales&apos;)]"/>
+  </record>
+  <record id="group_132_jin_sales_pos_users" model="res.groups">
+    <field name="name">Jin - Sales - POS Users</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Sales&apos;)]"/>
+    <field name="comment">11111</field>
+  </record>
+  <record id="group_126_jin_sales_temporary_credit_approvers" model="res.groups">
+    <field name="name">Jin - Sales - Temporary Credit Approvers</field>
+    <field name="category_id" search="[(&apos;name&apos;, &apos;=&apos;, &apos;Sales&apos;)]"/>
+  </record>
+  <record id="group_204_test_sales_2" model="res.groups">
+    <field name="name">TEST - SALES - 2</field>
+  </record>
+  <record id="group_105_test_mo_markasdone" model="res.groups">
+    <field name="name">Test_MO_MarkAsDone</field>
+  </record>
 </odoo>
