@@ -3,446 +3,434 @@
   <!-- 75 studio.approval.rule records ported -->
   <record id="rule_65_engineering_change_order_eco_approve_user_types_internal_use" model="studio.approval.rule">
     <field name="name">Engineering Change Order (ECO)/approve (User types / Internal User) (65)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Engineering Change Order (ECO)&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.eco&apos;)]"/>
     <field name="method">approve</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_66_engineering_change_order_eco_action_apply_user_types_interna" model="studio.approval.rule">
     <field name="name">Engineering Change Order (ECO)/action_apply (User types / Internal User) (66)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Engineering Change Order (ECO)&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.eco&apos;)]"/>
     <field name="method">action_apply</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_30_helpdesk_ticket_reverse_transfer_user_types_internal_user_30" model="studio.approval.rule">
     <field name="name">Helpdesk Ticket/Reverse Transfer (User types / Internal User) (30)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Helpdesk Ticket&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;helpdesk.ticket&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_25_journal_entry_sls_credit_note_approval_sales_credit_note_app" model="studio.approval.rule">
     <field name="name">Journal Entry/SLS - Credit Note Approval (Sales / Credit Note Approver) (25)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Journal Entry&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;account.move&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_24_journal_entry_sls_overdue_approval_sales_credit_note_approve" model="studio.approval.rule">
     <field name="name">Journal Entry/SLS - Overdue Approval (Sales / Credit Note Approver) (24)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Journal Entry&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;account.move&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_83_maintenance_request_archive_equipment_request_user_types_int" model="studio.approval.rule">
     <field name="name">Maintenance Request/archive_equipment_request (User types / Internal User) (83)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Maintenance Request&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;maintenance.request&apos;)]"/>
     <field name="method">archive_equipment_request</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_100_production_order_action_generate_serial_manufacturing_admini" model="studio.approval.rule">
     <field name="name">Production Order/action_generate_serial (Manufacturing / Administrator) (100)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Production Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.production&apos;)]"/>
     <field name="method">action_generate_serial</field>
     <field name="active" eval="True"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_101_production_order_action_product_forecast_report_inventory_ji" model="studio.approval.rule">
     <field name="name">Production Order/action_product_forecast_report (Inventory / Jin - Administrator) (101)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Production Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.production&apos;)]"/>
     <field name="method">action_product_forecast_report</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_91_production_order_button_unbuild_manufacturing_jin_manufactur" model="studio.approval.rule">
     <field name="name">Production Order/button_unbuild (Manufacturing / Jin - Manufacturing -  MO Full Writes with Unbuild) (91)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Production Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.production&apos;)]"/>
     <field name="method">button_unbuild</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_1_production_order_button_unplan_user_types_internal_user_1" model="studio.approval.rule">
     <field name="name">Production Order/button_unplan (User types / Internal User) (1)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Production Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.production&apos;)]"/>
     <field name="method">button_unplan</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_92_production_order_button_scrap_manufacturing_jin_manufacturin" model="studio.approval.rule">
     <field name="name">Production Order/button_scrap (Manufacturing / Jin - Manufacturing -  MO Full Writes with Unbuild) (92)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Production Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.production&apos;)]"/>
     <field name="method">button_scrap</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_4_production_order_button_mark_done_user_types_internal_user_4" model="studio.approval.rule">
     <field name="name">Production Order/button_mark_done (User types / Internal User) (4)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Production Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.production&apos;)]"/>
     <field name="method">button_mark_done</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_3_production_order_button_mark_done_user_types_internal_user_3" model="studio.approval.rule">
     <field name="name">Production Order/button_mark_done (User types / Internal User) (3)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Production Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.production&apos;)]"/>
     <field name="method">button_mark_done</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_5_production_order_button_mark_done_manufacturing_administrato" model="studio.approval.rule">
     <field name="name">Production Order/button_mark_done (Manufacturing / Administrator) (5)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Production Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.production&apos;)]"/>
     <field name="method">button_mark_done</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_2_production_order_button_mark_done_user_types_internal_user_2" model="studio.approval.rule">
     <field name="name">Production Order/button_mark_done (User types / Internal User) (2)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Production Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.production&apos;)]"/>
     <field name="method">button_mark_done</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_13_purchase_order_button_confirm_po_approval_10_000_amount_13" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (PO Approval - 10,000 &lt; Amount) (13)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_73_purchase_order_button_approve_user_types_internal_user_73" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (User types / Internal User) (73)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_67_purchase_order_button_approve_purchase_user_67" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (Purchase / User) (67)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_52_purchase_order_button_confirm_user_types_internal_user_52" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (User types / Internal User) (52)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_87_purchase_order_button_cancel_administration_access_rights_87" model="studio.approval.rule">
     <field name="name">Purchase Order/button_cancel (Administration / Access Rights) (87)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_cancel</field>
     <field name="active" eval="False"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_53_purchase_order_button_confirm_user_types_internal_user_53" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (User types / Internal User) (53)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_90_purchase_order_button_confirm_purchase_jin_po_approvers_po_a" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (Purchase / Jin - PO Approvers: PO Amount &gt; 500,000) (90)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_48_purchase_order_button_approve_po_approvals_po_amount_500_000" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (PO Approvals: PO Amount &lt;= 500,000) (48)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_98_purchase_order_button_approve_purchase_jin_po_approvers_po_a" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (Purchase / Jin - PO Approvers: PO Amount &lt;= 500,000) (98)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_70_purchase_order_button_approve_technical_jin_po_creator_70" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (Technical / Jin_PO_Creator) (70)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_16_purchase_order_button_confirm_po_approval_10_000_amount_16" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (PO Approval - 10,000 &lt; Amount) (16)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_54_purchase_order_button_confirm_po_approval_po_amount_500_000_" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (PO Approval: PO Amount &gt; 500,000) (54)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_12_purchase_order_button_confirm_user_types_public_12" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (User types / Public) (12)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_71_purchase_order_button_approve_user_types_internal_user_71" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (User types / Internal User) (71)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_88_purchase_order_button_approve_sales_jin_credit_note_approver" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (sales / Jin - Credit Note Approvers) (88)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_15_purchase_order_button_confirm_user_types_internal_user_15" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (User types / Internal User) (15)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_75_purchase_order_button_approve_po_approval_po_amount_500_000_" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (PO Approval: PO Amount &gt; 500,000) (75)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_89_purchase_order_button_confirm_purchase_jin_po_approvers_po_a" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (Purchase / Jin - PO Approvers: PO Amount &lt;= 500,000) (89)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="True"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_74_purchase_order_button_approve_po_approval_po_amount_500_000_" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (PO Approval: PO Amount &lt;= 500,000) (74)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_17_purchase_order_button_confirm_po_approving_users_17" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (PO Approving users) (17)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_64_purchase_order_button_cancel_user_types_internal_user_64" model="studio.approval.rule">
     <field name="name">Purchase Order/button_cancel (User types / Internal User) (64)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_cancel</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_72_purchase_order_button_approve_technical_jin_po_creator_72" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (Technical / Jin_PO_Creator) (72)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_69_purchase_order_button_approve_user_types_internal_user_69" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (User types / Internal User) (69)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_49_purchase_order_button_approve_po_approval_po_amount_500_000_" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (PO Approval: PO Amount &gt; 500,000) (49)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_68_purchase_order_button_approve_user_types_internal_user_68" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (User types / Internal User) (68)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_7_purchase_order_button_confirm_purchase_administrator_7" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (Purchase / Administrator) (7)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_14_purchase_order_confirm_reminder_mail_user_types_internal_use" model="studio.approval.rule">
     <field name="name">Purchase Order/confirm_reminder_mail (User types / Internal User) (14)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">confirm_reminder_mail</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_11_purchase_order_confirm_reminder_mail_user_types_internal_use" model="studio.approval.rule">
     <field name="name">Purchase Order/confirm_reminder_mail (User types / Internal User) (11)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;purchase.order&apos;)]"/>
     <field name="method">confirm_reminder_mail</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_94_purchase_order_non_inventory_approve_npo_purchase_jin_po_app" model="studio.approval.rule">
     <field name="name">Purchase Order (Non-Inventory)/Approve NPO (Purchase / Jin - PO Approvers: PO Amount &lt;= 500,000) (94)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order (Non-Inventory)&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_po_non_inventory&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_95_purchase_order_non_inventory_approve_npo_purchase_jin_po_app" model="studio.approval.rule">
     <field name="name">Purchase Order (Non-Inventory)/Approve NPO (Purchase / Jin - PO Approvers: PO Amount &gt; 500,000) (95)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Order (Non-Inventory)&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_po_non_inventory&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_46_purchase_request_approve_pr_user_types_internal_user_46" model="studio.approval.rule">
     <field name="name">Purchase Request/Approve PR (User types / Internal User) (46)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Request&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_28_purchase_request_approve_pr_purchase_purchase_request_approv" model="studio.approval.rule">
     <field name="name">Purchase Request/Approve PR (Purchase / Purchase Request Approver) (28)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Request&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_29_purchase_request_approve_pr_purchase_purchase_request_approv" model="studio.approval.rule">
     <field name="name">Purchase Request/Approve PR (Purchase / Purchase Request Approver) (29)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Request&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_9_purchase_request_confirm_pr_purchase_pr_approval_9" model="studio.approval.rule">
     <field name="name">Purchase Request/Confirm PR (Purchase / PR Approval) (9)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Request&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_10_purchase_request_done_pr_copy_pr_to_rfq_purchase_pr_approval" model="studio.approval.rule">
     <field name="name">Purchase Request/Done PR + Copy PR to RFQ (Purchase / PR Approval) (10)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Request&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_97_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">
     <field name="name">Purchase Request (Non-Inventory)/Approve PR - Non-Inventory (Purchase / Jin - Non-Inv PR Approvers) (97)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Request (Non-Inventory)&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_pr_non_inventory&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_93_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">
     <field name="name">Purchase Request (Non-Inventory)/Approve PR - Non-Inventory (Purchase / Jin - PR Approvers) (93)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Request (Non-Inventory)&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_pr_non_inventory&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="False"/>
   </record>
-  <record id="rule_78_purchase_requisition_action_done_sales_test_sales_1_78" model="studio.approval.rule">
-    <field name="name">Purchase Requisition/action_done (sales / TEST - SALES - 1) (78)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Requisition&apos;)]"/>
-    <field name="method">action_done</field>
-    <field name="active" eval="True"/>
-    <field name="exclusive_user" eval="True"/>
-  </record>
-  <record id="rule_77_purchase_requisition_request_for_quotation_user_types_intern" model="studio.approval.rule">
-    <field name="name">Purchase Requisition/Request for Quotation (User types / Internal User) (77)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Purchase Requisition&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-    <field name="exclusive_user" eval="True"/>
-  </record>
+  <!-- SKIPPED unresolved model ref: <record id="rule_78_purchase_requisition_action_done_sales_test_sales_1_78" model="studio.approval.rule">     <field name="name">Purchase Requisition/... -->
+  <!-- SKIPPED unresolved model ref: <record id="rule_77_purchase_requisition_request_for_quotation_user_types_intern" model="studio.approval.rule">     <field name="name">Purchase Requis... -->
   <record id="rule_33_sales_order_action_cancel_user_types_internal_user_33" model="studio.approval.rule">
     <field name="name">Sales Order/action_cancel (User types / Internal User) (33)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method">action_cancel</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_60_sales_order_action_draft_user_types_internal_user_60" model="studio.approval.rule">
     <field name="name">Sales Order/action_draft (User types / Internal User) (60)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method">action_draft</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_61_sales_order_action_quotation_send_user_types_internal_user_6" model="studio.approval.rule">
     <field name="name">Sales Order/action_quotation_send (User types / Internal User) (61)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method">action_quotation_send</field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_21_sales_order_action_quotation_send_technical_a_warning_can_be" model="studio.approval.rule">
     <field name="name">Sales Order/action_quotation_send (Technical / A warning can be set on a partner (Accountt)) (21)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method">action_quotation_send</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_47_sales_order_action_unlock_sale_repair_sales_unlock_47" model="studio.approval.rule">
     <field name="name">Sales Order/action_unlock (Sale / Repair Sales Unlock) (47)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method">action_unlock</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_51_sales_order_action_unlock_inventory_administrator_51" model="studio.approval.rule">
     <field name="name">Sales Order/action_unlock (Inventory / Administrator) (51)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method">action_unlock</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_50_sales_order_action_unlock_user_types_internal_user_50" model="studio.approval.rule">
     <field name="name">Sales Order/action_unlock (User types / Internal User) (50)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method">action_unlock</field>
     <field name="active" eval="False"/>
   </record>
   <record id="rule_23_sales_order_sls_bank_guarantee_approval_sales_bank_guarantee" model="studio.approval.rule">
     <field name="name">Sales Order/SLS - Bank Guarantee Approval (Sales / Bank Guarantee Approver) (23)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_99_sales_order_sls_create_customer_payment_user_types_internal_" model="studio.approval.rule">
     <field name="name">Sales Order/SLS - Create Customer Payment (User types / Internal User) (99)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_18_sales_order_sls_credit_limit_approval_sales_credit_limit_app" model="studio.approval.rule">
     <field name="name">Sales Order/SLS - Credit Limit Approval (Sales / Credit Limit Approver) (18)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_27_sales_order_sls_margin_approval_sales_margin_approver_27" model="studio.approval.rule">
     <field name="name">Sales Order/SLS - Margin Approval (Sales / Margin Approver) (27)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_22_sales_order_sls_overdue_approval_sales_overdue_approver_22" model="studio.approval.rule">
     <field name="name">Sales Order/SLS - Overdue Approval (Sales / Overdue Approver) (22)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_26_sales_order_sls_over_commission_approval_sales_over_commissi" model="studio.approval.rule">
     <field name="name">Sales Order/SLS - Over Commission Approval (Sales / Over Commission Approver) (26)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_19_sales_order_sls_temporary_credit_approval_sales_temporary_cr" model="studio.approval.rule">
     <field name="name">Sales Order/SLS - Temporary Credit Approval (Sales / Temporary Credit Approver) (19)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Sales Order&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_20_structure_master_imp_inactive_structure_sales_credit_limit_a" model="studio.approval.rule">
     <field name="name">Structure Master/IMP - Inactive Structure (Sales / Credit Limit Approver) (20)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Structure Master&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_structure_master&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_45_test02_sample_server_action_technical_a_warning_can_be_set_o" model="studio.approval.rule">
     <field name="name">TEST02/sample server action (Technical / A warning can be set on a partner (Stock)) (45)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;TEST02&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_test02&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
   <record id="rule_76_test02_sample_server_action_2_sales_test_sales_2_76" model="studio.approval.rule">
     <field name="name">TEST02/sample server action-2 (sales / TEST - SALES - 2) (76)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;TEST02&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_test02&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
     <field name="exclusive_user" eval="True"/>
   </record>
   <record id="rule_44_test02_sample_server_action_user_types_internal_user_44" model="studio.approval.rule">
     <field name="name">TEST02/sample server action (User types / Internal User) (44)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;TEST02&apos;)]"/>
+    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_test02&apos;)]"/>
     <field name="method"></field>
     <field name="active" eval="True"/>
   </record>
