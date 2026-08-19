@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'BugFix - Approvals',
-    'version': '17.0.0.0.3',
+    'version': '17.0.0.0.4',
     'summary': 'Studio-ported approval rules (75) + supporting security groups (15)',
     'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
     'category': 'Extra Tools',

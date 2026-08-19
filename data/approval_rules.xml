@@ -13,24 +13,9 @@
     <field name="method">action_apply</field>
     <field name="active" eval="True"/>
   </record>
-  <record id="rule_30_helpdesk_ticket_reverse_transfer_user_types_internal_user_30" model="studio.approval.rule">
-    <field name="name">Helpdesk Ticket/Reverse Transfer (User types / Internal User) (30)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;helpdesk.ticket&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_25_journal_entry_sls_credit_note_approval_sales_credit_note_app" model="studio.approval.rule">
-    <field name="name">Journal Entry/SLS - Credit Note Approval (Sales / Credit Note Approver) (25)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;account.move&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_24_journal_entry_sls_overdue_approval_sales_credit_note_approve" model="studio.approval.rule">
-    <field name="name">Journal Entry/SLS - Overdue Approval (Sales / Credit Note Approver) (24)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;account.move&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
+  <!-- SKIPPED empty method: <record id="rule_30_helpdesk_ticket_reverse_transfer_user_types_internal_user_30" model="studio.approval.rule">     <field name="name">Helpdesk Ticket... -->
+  <!-- SKIPPED empty method: <record id="rule_25_journal_entry_sls_credit_note_approval_sales_credit_note_app" model="studio.approval.rule">     <field name="name">Journal Entry/S... -->
+  <!-- SKIPPED empty method: <record id="rule_24_journal_entry_sls_overdue_approval_sales_credit_note_approve" model="studio.approval.rule">     <field name="name">Journal Entry/S... -->
   <record id="rule_83_maintenance_request_archive_equipment_request_user_types_int" model="studio.approval.rule">
     <field name="name">Maintenance Request/archive_equipment_request (User types / Internal User) (83)</field>
     <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;maintenance.request&apos;)]"/>
@@ -267,61 +252,15 @@
     <field name="method">confirm_reminder_mail</field>
     <field name="active" eval="False"/>
   </record>
-  <record id="rule_94_purchase_order_non_inventory_approve_npo_purchase_jin_po_app" model="studio.approval.rule">
-    <field name="name">Purchase Order (Non-Inventory)/Approve NPO (Purchase / Jin - PO Approvers: PO Amount &lt;= 500,000) (94)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_po_non_inventory&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_95_purchase_order_non_inventory_approve_npo_purchase_jin_po_app" model="studio.approval.rule">
-    <field name="name">Purchase Order (Non-Inventory)/Approve NPO (Purchase / Jin - PO Approvers: PO Amount &gt; 500,000) (95)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_po_non_inventory&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_46_purchase_request_approve_pr_user_types_internal_user_46" model="studio.approval.rule">
-    <field name="name">Purchase Request/Approve PR (User types / Internal User) (46)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="False"/>
-  </record>
-  <record id="rule_28_purchase_request_approve_pr_purchase_purchase_request_approv" model="studio.approval.rule">
-    <field name="name">Purchase Request/Approve PR (Purchase / Purchase Request Approver) (28)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-    <field name="exclusive_user" eval="True"/>
-  </record>
-  <record id="rule_29_purchase_request_approve_pr_purchase_purchase_request_approv" model="studio.approval.rule">
-    <field name="name">Purchase Request/Approve PR (Purchase / Purchase Request Approver) (29)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="False"/>
-  </record>
-  <record id="rule_9_purchase_request_confirm_pr_purchase_pr_approval_9" model="studio.approval.rule">
-    <field name="name">Purchase Request/Confirm PR (Purchase / PR Approval) (9)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_10_purchase_request_done_pr_copy_pr_to_rfq_purchase_pr_approval" model="studio.approval.rule">
-    <field name="name">Purchase Request/Done PR + Copy PR to RFQ (Purchase / PR Approval) (10)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_purchase_request&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_97_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">
-    <field name="name">Purchase Request (Non-Inventory)/Approve PR - Non-Inventory (Purchase / Jin - Non-Inv PR Approvers) (97)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_pr_non_inventory&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_93_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">
-    <field name="name">Purchase Request (Non-Inventory)/Approve PR - Non-Inventory (Purchase / Jin - PR Approvers) (93)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_pr_non_inventory&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="False"/>
-  </record>
+  <!-- SKIPPED empty method: <record id="rule_94_purchase_order_non_inventory_approve_npo_purchase_jin_po_app" model="studio.approval.rule">     <field name="name">Purchase Order ... -->
+  <!-- SKIPPED empty method: <record id="rule_95_purchase_order_non_inventory_approve_npo_purchase_jin_po_app" model="studio.approval.rule">     <field name="name">Purchase Order ... -->
+  <!-- SKIPPED empty method: <record id="rule_46_purchase_request_approve_pr_user_types_internal_user_46" model="studio.approval.rule">     <field name="name">Purchase Request/App... -->
+  <!-- SKIPPED empty method: <record id="rule_28_purchase_request_approve_pr_purchase_purchase_request_approv" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
+  <!-- SKIPPED empty method: <record id="rule_29_purchase_request_approve_pr_purchase_purchase_request_approv" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
+  <!-- SKIPPED empty method: <record id="rule_9_purchase_request_confirm_pr_purchase_pr_approval_9" model="studio.approval.rule">     <field name="name">Purchase Request/Confirm P... -->
+  <!-- SKIPPED empty method: <record id="rule_10_purchase_request_done_pr_copy_pr_to_rfq_purchase_pr_approval" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
+  <!-- SKIPPED empty method: <record id="rule_97_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
+  <!-- SKIPPED empty method: <record id="rule_93_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
   <!-- SKIPPED unresolved model ref: <record id="rule_78_purchase_requisition_action_done_sales_test_sales_1_78" model="studio.approval.rule">     <field name="name">Purchase Requisition/... -->
   <!-- SKIPPED unresolved model ref: <record id="rule_77_purchase_requisition_request_for_quotation_user_types_intern" model="studio.approval.rule">     <field name="name">Purchase Requis... -->
   <record id="rule_33_sales_order_action_cancel_user_types_internal_user_33" model="studio.approval.rule">
@@ -366,74 +305,17 @@
     <field name="method">action_unlock</field>
     <field name="active" eval="False"/>
   </record>
-  <record id="rule_23_sales_order_sls_bank_guarantee_approval_sales_bank_guarantee" model="studio.approval.rule">
-    <field name="name">Sales Order/SLS - Bank Guarantee Approval (Sales / Bank Guarantee Approver) (23)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_99_sales_order_sls_create_customer_payment_user_types_internal_" model="studio.approval.rule">
-    <field name="name">Sales Order/SLS - Create Customer Payment (User types / Internal User) (99)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_18_sales_order_sls_credit_limit_approval_sales_credit_limit_app" model="studio.approval.rule">
-    <field name="name">Sales Order/SLS - Credit Limit Approval (Sales / Credit Limit Approver) (18)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_27_sales_order_sls_margin_approval_sales_margin_approver_27" model="studio.approval.rule">
-    <field name="name">Sales Order/SLS - Margin Approval (Sales / Margin Approver) (27)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-    <field name="exclusive_user" eval="True"/>
-  </record>
-  <record id="rule_22_sales_order_sls_overdue_approval_sales_overdue_approver_22" model="studio.approval.rule">
-    <field name="name">Sales Order/SLS - Overdue Approval (Sales / Overdue Approver) (22)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_26_sales_order_sls_over_commission_approval_sales_over_commissi" model="studio.approval.rule">
-    <field name="name">Sales Order/SLS - Over Commission Approval (Sales / Over Commission Approver) (26)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_19_sales_order_sls_temporary_credit_approval_sales_temporary_cr" model="studio.approval.rule">
-    <field name="name">Sales Order/SLS - Temporary Credit Approval (Sales / Temporary Credit Approver) (19)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_20_structure_master_imp_inactive_structure_sales_credit_limit_a" model="studio.approval.rule">
-    <field name="name">Structure Master/IMP - Inactive Structure (Sales / Credit Limit Approver) (20)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_structure_master&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_45_test02_sample_server_action_technical_a_warning_can_be_set_o" model="studio.approval.rule">
-    <field name="name">TEST02/sample server action (Technical / A warning can be set on a partner (Stock)) (45)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_test02&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_76_test02_sample_server_action_2_sales_test_sales_2_76" model="studio.approval.rule">
-    <field name="name">TEST02/sample server action-2 (sales / TEST - SALES - 2) (76)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_test02&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-    <field name="exclusive_user" eval="True"/>
-  </record>
-  <record id="rule_44_test02_sample_server_action_user_types_internal_user_44" model="studio.approval.rule">
-    <field name="name">TEST02/sample server action (User types / Internal User) (44)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;x_test02&apos;)]"/>
-    <field name="method"></field>
-    <field name="active" eval="True"/>
-  </record>
+  <!-- SKIPPED empty method: <record id="rule_23_sales_order_sls_bank_guarantee_approval_sales_bank_guarantee" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
+  <!-- SKIPPED empty method: <record id="rule_99_sales_order_sls_create_customer_payment_user_types_internal_" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
+  <!-- SKIPPED empty method: <record id="rule_18_sales_order_sls_credit_limit_approval_sales_credit_limit_app" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
+  <!-- SKIPPED empty method: <record id="rule_27_sales_order_sls_margin_approval_sales_margin_approver_27" model="studio.approval.rule">     <field name="name">Sales Order/SLS - M... -->
+  <!-- SKIPPED empty method: <record id="rule_22_sales_order_sls_overdue_approval_sales_overdue_approver_22" model="studio.approval.rule">     <field name="name">Sales Order/SLS -... -->
+  <!-- SKIPPED empty method: <record id="rule_26_sales_order_sls_over_commission_approval_sales_over_commissi" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
+  <!-- SKIPPED empty method: <record id="rule_19_sales_order_sls_temporary_credit_approval_sales_temporary_cr" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
+  <!-- SKIPPED empty method: <record id="rule_20_structure_master_imp_inactive_structure_sales_credit_limit_a" model="studio.approval.rule">     <field name="name">Structure Maste... -->
+  <!-- SKIPPED empty method: <record id="rule_45_test02_sample_server_action_technical_a_warning_can_be_set_o" model="studio.approval.rule">     <field name="name">TEST02/sample s... -->
+  <!-- SKIPPED empty method: <record id="rule_76_test02_sample_server_action_2_sales_test_sales_2_76" model="studio.approval.rule">     <field name="name">TEST02/sample server act... -->
+  <!-- SKIPPED empty method: <record id="rule_44_test02_sample_server_action_user_types_internal_user_44" model="studio.approval.rule">     <field name="name">TEST02/sample server... -->
   <record id="rule_102_transfer_action_cancel_inventory_jin_administrator_102" model="studio.approval.rule">
     <field name="name">Transfer/action_cancel (Inventory / Jin - Administrator) (102)</field>
     <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Transfer&apos;)]"/>
