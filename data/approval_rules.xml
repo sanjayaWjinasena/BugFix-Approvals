@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <!-- 75 studio.approval.rule records ported -->
-  <!-- SKIPPED unknown model mrp.eco: <record id="rule_65_engineering_change_order_eco_approve_user_types_internal_use" model="studio.approval.rule">     <field name="name">Engineering Cha... -->
-  <!-- SKIPPED unknown model mrp.eco: <record id="rule_66_engineering_change_order_eco_action_apply_user_types_interna" model="studio.approval.rule">     <field name="name">Engineering Cha... -->
-  <!-- SKIPPED empty method: <record id="rule_30_helpdesk_ticket_reverse_transfer_user_types_internal_user_30" model="studio.approval.rule">     <field name="name">Helpdesk Ticket... -->
-  <!-- SKIPPED empty method: <record id="rule_25_journal_entry_sls_credit_note_approval_sales_credit_note_app" model="studio.approval.rule">     <field name="name">Journal Entry/S... -->
-  <!-- SKIPPED empty method: <record id="rule_24_journal_entry_sls_overdue_approval_sales_credit_note_approve" model="studio.approval.rule">     <field name="name">Journal Entry/S... -->
+  
+  
+  
+  
+  
   <record id="rule_83_maintenance_request_archive_equipment_request_user_types_int" model="studio.approval.rule">
     <field name="name">Maintenance Request/archive_equipment_request (User types / Internal User) (83)</field>
     <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;maintenance.request&apos;)]"/>
@@ -242,17 +242,17 @@
     <field name="method">confirm_reminder_mail</field>
     <field name="active" eval="False"/>
   </record>
-  <!-- SKIPPED empty method: <record id="rule_94_purchase_order_non_inventory_approve_npo_purchase_jin_po_app" model="studio.approval.rule">     <field name="name">Purchase Order ... -->
-  <!-- SKIPPED empty method: <record id="rule_95_purchase_order_non_inventory_approve_npo_purchase_jin_po_app" model="studio.approval.rule">     <field name="name">Purchase Order ... -->
-  <!-- SKIPPED empty method: <record id="rule_46_purchase_request_approve_pr_user_types_internal_user_46" model="studio.approval.rule">     <field name="name">Purchase Request/App... -->
-  <!-- SKIPPED empty method: <record id="rule_28_purchase_request_approve_pr_purchase_purchase_request_approv" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
-  <!-- SKIPPED empty method: <record id="rule_29_purchase_request_approve_pr_purchase_purchase_request_approv" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
-  <!-- SKIPPED empty method: <record id="rule_9_purchase_request_confirm_pr_purchase_pr_approval_9" model="studio.approval.rule">     <field name="name">Purchase Request/Confirm P... -->
-  <!-- SKIPPED empty method: <record id="rule_10_purchase_request_done_pr_copy_pr_to_rfq_purchase_pr_approval" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
-  <!-- SKIPPED empty method: <record id="rule_97_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
-  <!-- SKIPPED empty method: <record id="rule_93_purchase_request_non_inventory_approve_pr_non_inventory_purc" model="studio.approval.rule">     <field name="name">Purchase Reques... -->
-  <!-- SKIPPED unresolved model ref: <record id="rule_78_purchase_requisition_action_done_sales_test_sales_1_78" model="studio.approval.rule">     <field name="name">Purchase Requisition/... -->
-  <!-- SKIPPED unresolved model ref: <record id="rule_77_purchase_requisition_request_for_quotation_user_types_intern" model="studio.approval.rule">     <field name="name">Purchase Requis... -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <record id="rule_33_sales_order_action_cancel_user_types_internal_user_33" model="studio.approval.rule">
     <field name="name">Sales Order/action_cancel (User types / Internal User) (33)</field>
     <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;sale.order&apos;)]"/>
@@ -295,7 +295,7 @@
     <field name="method">action_unlock</field>
     <field name="active" eval="False"/>
   </record>
-  <!-- SKIPPED empty method: <!-- SKIPPED unknown model Transfer: <record id="rule_23_sales_order_sls_bank_guarantee_approval_sales_bank_guarantee" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
-  <!-- SKIPPED unknown model Transfer: <record id="rule_56_transfer_action_open_label_layout_administration_access_righ" model="studio.approval.rule">     <field name="name">Transfer/action... -->
-  <!-- SKIPPED unknown model Transfer: <record id="rule_62_transfer_action_put_in_pack_user_types_internal_user_62" model="studio.approval.rule">     <field name="name">Transfer/action_put_... -->
+  
+  
+  
 </odoo>
