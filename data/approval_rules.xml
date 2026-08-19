@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <!-- 75 studio.approval.rule records ported -->
-  <record id="rule_65_engineering_change_order_eco_approve_user_types_internal_use" model="studio.approval.rule">
-    <field name="name">Engineering Change Order (ECO)/approve (User types / Internal User) (65)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.eco&apos;)]"/>
-    <field name="method">approve</field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_66_engineering_change_order_eco_action_apply_user_types_interna" model="studio.approval.rule">
-    <field name="name">Engineering Change Order (ECO)/action_apply (User types / Internal User) (66)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;mrp.eco&apos;)]"/>
-    <field name="method">action_apply</field>
-    <field name="active" eval="True"/>
-  </record>
+  <!-- SKIPPED unknown model mrp.eco: <record id="rule_65_engineering_change_order_eco_approve_user_types_internal_use" model="studio.approval.rule">     <field name="name">Engineering Cha... -->
+  <!-- SKIPPED unknown model mrp.eco: <record id="rule_66_engineering_change_order_eco_action_apply_user_types_interna" model="studio.approval.rule">     <field name="name">Engineering Cha... -->
   <!-- SKIPPED empty method: <record id="rule_30_helpdesk_ticket_reverse_transfer_user_types_internal_user_30" model="studio.approval.rule">     <field name="name">Helpdesk Ticket... -->
   <!-- SKIPPED empty method: <record id="rule_25_journal_entry_sls_credit_note_approval_sales_credit_note_app" model="studio.approval.rule">     <field name="name">Journal Entry/S... -->
   <!-- SKIPPED empty method: <record id="rule_24_journal_entry_sls_overdue_approval_sales_credit_note_approve" model="studio.approval.rule">     <field name="name">Journal Entry/S... -->
@@ -305,34 +295,7 @@
     <field name="method">action_unlock</field>
     <field name="active" eval="False"/>
   </record>
-  <!-- SKIPPED empty method: <record id="rule_23_sales_order_sls_bank_guarantee_approval_sales_bank_guarantee" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
-  <!-- SKIPPED empty method: <record id="rule_99_sales_order_sls_create_customer_payment_user_types_internal_" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
-  <!-- SKIPPED empty method: <record id="rule_18_sales_order_sls_credit_limit_approval_sales_credit_limit_app" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
-  <!-- SKIPPED empty method: <record id="rule_27_sales_order_sls_margin_approval_sales_margin_approver_27" model="studio.approval.rule">     <field name="name">Sales Order/SLS - M... -->
-  <!-- SKIPPED empty method: <record id="rule_22_sales_order_sls_overdue_approval_sales_overdue_approver_22" model="studio.approval.rule">     <field name="name">Sales Order/SLS -... -->
-  <!-- SKIPPED empty method: <record id="rule_26_sales_order_sls_over_commission_approval_sales_over_commissi" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
-  <!-- SKIPPED empty method: <record id="rule_19_sales_order_sls_temporary_credit_approval_sales_temporary_cr" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
-  <!-- SKIPPED empty method: <record id="rule_20_structure_master_imp_inactive_structure_sales_credit_limit_a" model="studio.approval.rule">     <field name="name">Structure Maste... -->
-  <!-- SKIPPED empty method: <record id="rule_45_test02_sample_server_action_technical_a_warning_can_be_set_o" model="studio.approval.rule">     <field name="name">TEST02/sample s... -->
-  <!-- SKIPPED empty method: <record id="rule_76_test02_sample_server_action_2_sales_test_sales_2_76" model="studio.approval.rule">     <field name="name">TEST02/sample server act... -->
-  <!-- SKIPPED empty method: <record id="rule_44_test02_sample_server_action_user_types_internal_user_44" model="studio.approval.rule">     <field name="name">TEST02/sample server... -->
-  <record id="rule_102_transfer_action_cancel_inventory_jin_administrator_102" model="studio.approval.rule">
-    <field name="name">Transfer/action_cancel (Inventory / Jin - Administrator) (102)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Transfer&apos;)]"/>
-    <field name="method">action_cancel</field>
-    <field name="active" eval="True"/>
-  </record>
-  <record id="rule_56_transfer_action_open_label_layout_administration_access_righ" model="studio.approval.rule">
-    <field name="name">Transfer/action_open_label_layout (Administration / Access Rights) (56)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Transfer&apos;)]"/>
-    <field name="method">action_open_label_layout</field>
-    <field name="active" eval="True"/>
-    <field name="exclusive_user" eval="True"/>
-  </record>
-  <record id="rule_62_transfer_action_put_in_pack_user_types_internal_user_62" model="studio.approval.rule">
-    <field name="name">Transfer/action_put_in_pack (User types / Internal User) (62)</field>
-    <field name="model_id" search="[(&apos;model&apos;, &apos;=&apos;, &apos;Transfer&apos;)]"/>
-    <field name="method">action_put_in_pack</field>
-    <field name="active" eval="True"/>
-  </record>
+  <!-- SKIPPED empty method: <!-- SKIPPED unknown model Transfer: <record id="rule_23_sales_order_sls_bank_guarantee_approval_sales_bank_guarantee" model="studio.approval.rule">     <field name="name">Sales Order/SLS... -->
+  <!-- SKIPPED unknown model Transfer: <record id="rule_56_transfer_action_open_label_layout_administration_access_righ" model="studio.approval.rule">     <field name="name">Transfer/action... -->
+  <!-- SKIPPED unknown model Transfer: <record id="rule_62_transfer_action_put_in_pack_user_types_internal_user_62" model="studio.approval.rule">     <field name="name">Transfer/action_put_... -->
 </odoo>
