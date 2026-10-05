@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Approvals',
-    'version': '17.0.0.0.10',
+    'version': '17.0.0.0.11',
     'summary': 'Studio-ported approval rules (75) + supporting security groups (15)',
     'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
     'category': 'Extra Tools',
@@ -17,8 +17,9 @@
         'maintenance', 'mrp', 'purchase', 'sale',
     ],
     'data': [
-        'data/approval_rules.xml',
+        # groups first: approval_rules.xml now references them via group_id (v0.0.11)
         'data/groups.xml',
+        'data/approval_rules.xml',
     ],
     'installable': True,
     'auto_install': False,
