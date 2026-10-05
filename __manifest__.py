@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Approvals',
-    'version': '17.0.0.0.11',
+    'version': '17.0.0.0.12',
     'summary': 'Studio-ported approval rules (75) + supporting security groups (15)',
     'author': 'Jinasena Agricultural Machinery (Pvt) Ltd.',
     'category': 'Extra Tools',
@@ -21,6 +21,8 @@
         'data/groups.xml',
         'data/approval_rules.xml',
     ],
+    # Adopts the existing Studio groups/rules on databases that still have them (v0.0.12).
+    'pre_init_hook': 'pre_init_hook',
     'installable': True,
     'auto_install': False,
     'application': True,
