@@ -12,13 +12,14 @@ Fix (v0.0.10, approved by the developer 2026-10-05): drop those keys from vals
 when they equal the current value on every record being written. A real change
 still reaches web_studio's guard and is still refused, exactly as Studio intends.
 """
+
 from odoo import models
 
-_GUARDED = ('group_id', 'model_id', 'method', 'action_id')
+_GUARDED = ("group_id", "model_id", "method", "action_id")
 
 
 class StudioApprovalRule(models.Model):
-    _inherit = 'studio.approval.rule'
+    _inherit = "studio.approval.rule"
 
     def write(self, vals):
         if self and any(k in vals for k in _GUARDED):
@@ -28,7 +29,7 @@ class StudioApprovalRule(models.Model):
                     continue
                 field = self._fields[key]
                 new = vals[key]
-                if field.type == 'many2one':
+                if field.type == "many2one":
                     new = new or False
                     same = all((rec[key].id or False) == new for rec in self)
                 else:
