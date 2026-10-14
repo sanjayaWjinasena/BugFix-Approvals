@@ -21,7 +21,5 @@
         'data/groups.xml',
         'data/approval_rules.xml',
     ],
-    'installable': True,
-    'auto_install': False,
     'application': True,
 }
