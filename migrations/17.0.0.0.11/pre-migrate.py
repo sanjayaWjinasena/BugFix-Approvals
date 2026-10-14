@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """v0.0.11: let the corrected approver group reach rules that already have entries.
 
 v0.0.11 restores group_id / domain / message on the approval rules (the port had
@@ -15,7 +14,7 @@ already correct.
 """
 import logging
 
-from odoo import api, SUPERUSER_ID
+from odoo import SUPERUSER_ID, api
 
 _logger = logging.getLogger(__name__)
 

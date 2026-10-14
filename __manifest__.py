@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': 'Jinasena : Module : Approvals',
     'version': '17.0.0.0.11',

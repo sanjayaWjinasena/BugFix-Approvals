@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Let module upgrades re-load approval rules that already have approval entries.
 
 web_studio's studio.approval.rule.write() raises
