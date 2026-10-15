@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="rule_100_production_order_action_generate_serial_manufacturing_admini" model="studio.approval.rule">
+    <field name="name">Production Order/action_generate_serial (Manufacturing / Administrator) (100)</field>
+    <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
+    <field name="method">action_generate_serial</field>
+    <field name="active" eval="True"/>
+    <field name="exclusive_user" eval="True"/>
+    <field name="group_id" ref="mrp.group_mrp_manager"/>
+  </record>
+  <record id="rule_101_production_order_action_product_forecast_report_inventory_ji" model="studio.approval.rule">
+    <field name="name">Production Order/action_product_forecast_report (Inventory / Jin - Administrator) (101)</field>
+    <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
+    <field name="method">action_product_forecast_report</field>
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="stock.group_stock_manager"/>
+  </record>
+  <record id="rule_91_production_order_button_unbuild_manufacturing_jin_manufactur" model="studio.approval.rule">
+    <field name="name">Production Order/button_unbuild (Manufacturing / Jin - Manufacturing -  MO Full Writes with Unbuild) (91)</field>
+    <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
+    <field name="method">button_unbuild</field>
+    <field name="active" eval="True"/>
+  </record>
+  <record id="rule_1_production_order_button_unplan_user_types_internal_user_1" model="studio.approval.rule">
+    <field name="name">Production Order/button_unplan (User types / Internal User) (1)</field>
+    <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
+    <field name="method">button_unplan</field>
+    <field name="active" eval="True"/>
+  </record>
+  <record id="rule_92_production_order_button_scrap_manufacturing_jin_manufacturin" model="studio.approval.rule">
+    <field name="name">Production Order/button_scrap (Manufacturing / Jin - Manufacturing -  MO Full Writes with Unbuild) (92)</field>
+    <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
+    <field name="method">button_scrap</field>
+    <field name="active" eval="True"/>
+  </record>
+  <record id="rule_4_production_order_button_mark_done_user_types_internal_user_4" model="studio.approval.rule">
+    <field name="name">Production Order/button_mark_done (User types / Internal User) (4)</field>
+    <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
+    <field name="method">button_mark_done</field>
+    <field name="active" eval="False"/>
+  </record>
+  <record id="rule_3_production_order_button_mark_done_user_types_internal_user_3" model="studio.approval.rule">
+    <field name="name">Production Order/button_mark_done (User types / Internal User) (3)</field>
+    <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
+    <field name="method">button_mark_done</field>
+    <field name="active" eval="False"/>
+  </record>
+  <record id="rule_5_production_order_button_mark_done_manufacturing_administrato" model="studio.approval.rule">
+    <field name="name">Production Order/button_mark_done (Manufacturing / Administrator) (5)</field>
+    <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
+    <field name="method">button_mark_done</field>
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="mrp.group_mrp_manager"/>
+  </record>
+  <record id="rule_2_production_order_button_mark_done_user_types_internal_user_2" model="studio.approval.rule">
+    <field name="name">Production Order/button_mark_done (User types / Internal User) (2)</field>
+    <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
+    <field name="method">button_mark_done</field>
+    <field name="active" eval="False"/>
+  </record>
+</odoo>

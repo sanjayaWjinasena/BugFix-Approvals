@@ -21,9 +21,11 @@
         "sale",
     ],
     "data": [
-        # groups first: approval_rules.xml now references them via group_id (v0.0.11)
-        "data/groups.xml",
-        "data/approval_rules.xml",
+        "security/bugfix_approvals_security.xml",
+        "data/maintenance_request_data.xml",
+        "data/mrp_production_data.xml",
+        "data/purchase_order_data.xml",
+        "data/sale_order_data.xml",
     ],
     "application": True,
 }

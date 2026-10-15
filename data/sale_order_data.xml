@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="rule_33_sales_order_action_cancel_user_types_internal_user_33" model="studio.approval.rule">
+    <field name="name">Sales Order/action_cancel (User types / Internal User) (33)</field>
+    <field name="model_id" search="[('model', '=', 'sale.order')]"/>
+    <field name="method">action_cancel</field>
+    <field name="active" eval="True"/>
+  </record>
+  <record id="rule_60_sales_order_action_draft_user_types_internal_user_60" model="studio.approval.rule">
+    <field name="name">Sales Order/action_draft (User types / Internal User) (60)</field>
+    <field name="model_id" search="[('model', '=', 'sale.order')]"/>
+    <field name="method">action_draft</field>
+    <field name="active" eval="False"/>
+  </record>
+  <record id="rule_61_sales_order_action_quotation_send_user_types_internal_user_6" model="studio.approval.rule">
+    <field name="name">Sales Order/action_quotation_send (User types / Internal User) (61)</field>
+    <field name="model_id" search="[('model', '=', 'sale.order')]"/>
+    <field name="method">action_quotation_send</field>
+    <field name="active" eval="True"/>
+  </record>
+  <record id="rule_21_sales_order_action_quotation_send_technical_a_warning_can_be" model="studio.approval.rule">
+    <field name="name">Sales Order/action_quotation_send (Technical / A warning can be set on a partner (Accountt)) (21)</field>
+    <field name="model_id" search="[('model', '=', 'sale.order')]"/>
+    <field name="method">action_quotation_send</field>
+    <field name="active" eval="False"/>
+    <field name="group_id" ref="account.group_warning_account"/>
+  </record>
+  <record id="rule_47_sales_order_action_unlock_sale_repair_sales_unlock_47" model="studio.approval.rule">
+    <field name="name">Sales Order/action_unlock (Sale / Repair Sales Unlock) (47)</field>
+    <field name="model_id" search="[('model', '=', 'sale.order')]"/>
+    <field name="method">action_unlock</field>
+    <field name="active" eval="False"/>
+    <field name="group_id" ref="BugFix-Approvals.group_178_repair_sales_unlock"/>
+  </record>
+  <record id="rule_51_sales_order_action_unlock_inventory_administrator_51" model="studio.approval.rule">
+    <field name="name">Sales Order/action_unlock (Inventory / Administrator) (51)</field>
+    <field name="model_id" search="[('model', '=', 'sale.order')]"/>
+    <field name="method">action_unlock</field>
+    <field name="active" eval="False"/>
+    <field name="group_id" ref="stock.group_stock_manager"/>
+  </record>
+  <record id="rule_50_sales_order_action_unlock_user_types_internal_user_50" model="studio.approval.rule">
+    <field name="name">Sales Order/action_unlock (User types / Internal User) (50)</field>
+    <field name="model_id" search="[('model', '=', 'sale.order')]"/>
+    <field name="method">action_unlock</field>
+    <field name="active" eval="False"/>
+  </record>
+</odoo>

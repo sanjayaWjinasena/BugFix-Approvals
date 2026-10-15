@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- 75 studio.approval.rule records ported -->
+  <record id="rule_83_maintenance_request_archive_equipment_request_user_types_int" model="studio.approval.rule">
+    <field name="name">Maintenance Request/archive_equipment_request (User types / Internal User) (83)</field>
+    <field name="model_id" search="[('model', '=', 'maintenance.request')]"/>
+    <field name="method">archive_equipment_request</field>
+    <field name="active" eval="True"/>
+  </record>
+</odoo>
