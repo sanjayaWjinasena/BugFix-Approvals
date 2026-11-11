@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="rule_13_purchase_order_button_confirm_po_approval_10_000_amount_13" model="studio.approval.rule">
+  <record id="approval_rule_purchase_order_button_confirm_po_approval_10_amount_13" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (PO Approval - 10,000 &lt; Amount) (13)</field>
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
-    <field name="group_id" ref="BugFix-Approvals.group_113_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount_2"/>
     <field name="domain">['&amp;', ['amount_total', '&gt;', 10000], ['amount_total', '&lt;=', 20000]]</field>
   </record>
   <record id="rule_73_purchase_order_button_approve_user_types_internal_user_73" model="studio.approval.rule">
@@ -49,15 +49,15 @@
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="True"/>
-    <field name="group_id" ref="BugFix-Approvals.group_113_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount_2"/>
     <field name="domain">[['amount_total', '&gt;', 500000]]</field>
   </record>
-  <record id="rule_48_purchase_order_button_approve_po_approvals_po_amount_500_000" model="studio.approval.rule">
+  <record id="approval_rule_purchase_order_button_approve_po_approvals_po_amount" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (PO Approvals: PO Amount &lt;= 500,000) (48)</field>
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
-    <field name="group_id" ref="BugFix-Approvals.group_112_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount"/>
     <field name="domain">[['amount_total', '&lt;=', 500000]]</field>
   </record>
   <record id="rule_98_purchase_order_button_approve_purchase_jin_po_approvers_po_a" model="studio.approval.rule">
@@ -65,7 +65,7 @@
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="True"/>
-    <field name="group_id" ref="BugFix-Approvals.group_112_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount"/>
   </record>
   <record id="rule_70_purchase_order_button_approve_technical_jin_po_creator_70" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (Technical / Jin_PO_Creator) (70)</field>
@@ -75,22 +75,22 @@
     <field name="exclusive_user" eval="True"/>
     <field name="domain">[['amount_total', '&lt;', 1]]</field>
   </record>
-  <record id="rule_16_purchase_order_button_confirm_po_approval_10_000_amount_16" model="studio.approval.rule">
+  <record id="approval_rule_purchase_order_button_confirm_po_approval_10_amount_16" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (PO Approval - 10,000 &lt; Amount) (16)</field>
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
     <field name="exclusive_user" eval="True"/>
-    <field name="group_id" ref="BugFix-Approvals.group_113_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount_2"/>
     <field name="domain">[['amount_total', '&gt;', 500000]]</field>
     <field name="message">PO amount is greater than 500,000. Need higher approval.</field>
   </record>
-  <record id="rule_54_purchase_order_button_confirm_po_approval_po_amount_500_000_" model="studio.approval.rule">
+  <record id="approval_rule_purchase_order_button_confirm_po_approval_po_amount" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (PO Approval: PO Amount &gt; 500,000) (54)</field>
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
-    <field name="group_id" ref="BugFix-Approvals.group_113_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount_2"/>
   </record>
   <record id="rule_12_purchase_order_button_confirm_user_types_public_12" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (User types / Public) (12)</field>
@@ -110,7 +110,7 @@
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
-    <field name="group_id" ref="BugFix-Approvals.group_129_jin_sales_credit_note_approvers"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_sales_credit_note_approvers"/>
   </record>
   <record id="rule_15_purchase_order_button_confirm_user_types_internal_user_15" model="studio.approval.rule">
     <field name="name">Purchase Order/button_confirm (User types / Internal User) (15)</field>
@@ -118,12 +118,12 @@
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
   </record>
-  <record id="rule_75_purchase_order_button_approve_po_approval_po_amount_500_000_" model="studio.approval.rule">
+  <record id="approval_rule_purchase_order_button_approve_po_approval_po_amount_3" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (PO Approval: PO Amount &gt; 500,000) (75)</field>
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
-    <field name="group_id" ref="BugFix-Approvals.group_113_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount_2"/>
     <field name="domain">[['amount_total', '&gt;', 500000]]</field>
   </record>
   <record id="rule_89_purchase_order_button_confirm_purchase_jin_po_approvers_po_a" model="studio.approval.rule">
@@ -132,15 +132,15 @@
     <field name="method">button_confirm</field>
     <field name="active" eval="True"/>
     <field name="exclusive_user" eval="True"/>
-    <field name="group_id" ref="BugFix-Approvals.group_112_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount"/>
     <field name="domain">[['amount_total', '&lt;=', 500000]]</field>
   </record>
-  <record id="rule_74_purchase_order_button_approve_po_approval_po_amount_500_000_" model="studio.approval.rule">
+  <record id="approval_rule_purchase_order_button_approve_po_approval_po_amount_2" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (PO Approval: PO Amount &lt;= 500,000) (74)</field>
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
-    <field name="group_id" ref="BugFix-Approvals.group_112_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount"/>
     <field name="domain">[['amount_total', '&lt;=', 500000]]</field>
   </record>
   <record id="rule_17_purchase_order_button_confirm_po_approving_users_17" model="studio.approval.rule">
@@ -148,7 +148,7 @@
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_confirm</field>
     <field name="active" eval="False"/>
-    <field name="group_id" ref="BugFix-Approvals.group_112_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount"/>
     <field name="domain">[["amount_total","&lt;=",500000]]</field>
     <field name="message">You are not allowed to approve Purchase Orders. Please request for approval from an authorized user.</field>
   </record>
@@ -171,12 +171,12 @@
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
   </record>
-  <record id="rule_49_purchase_order_button_approve_po_approval_po_amount_500_000_" model="studio.approval.rule">
+  <record id="approval_rule_purchase_order_button_approve_po_approval_po_amount" model="studio.approval.rule">
     <field name="name">Purchase Order/button_approve (PO Approval: PO Amount &gt; 500,000) (49)</field>
     <field name="model_id" search="[('model', '=', 'purchase.order')]"/>
     <field name="method">button_approve</field>
     <field name="active" eval="False"/>
-    <field name="group_id" ref="BugFix-Approvals.group_113_jin_po_approvers_po_amount_500_000"/>
+    <field name="group_id" ref="BugFix-Approvals.group_jin_po_approvers_po_amount_2"/>
     <field name="domain">[['amount_total', '&gt;', 500000]]</field>
   </record>
   <record id="rule_68_purchase_order_button_approve_user_types_internal_user_68" model="studio.approval.rule">

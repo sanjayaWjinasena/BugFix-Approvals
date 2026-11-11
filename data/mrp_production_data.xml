@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="rule_100_production_order_action_generate_serial_manufacturing_admini" model="studio.approval.rule">
+  <record id="approval_rule_production_order_action_generate_serial_manufacturing_admini" model="studio.approval.rule">
     <field name="name">Production Order/action_generate_serial (Manufacturing / Administrator) (100)</field>
     <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
     <field name="method">action_generate_serial</field>
@@ -8,7 +8,7 @@
     <field name="exclusive_user" eval="True"/>
     <field name="group_id" ref="mrp.group_mrp_manager"/>
   </record>
-  <record id="rule_101_production_order_action_product_forecast_report_inventory_ji" model="studio.approval.rule">
+  <record id="approval_rule_production_order_action_product_forecast_report_inventory_ji" model="studio.approval.rule">
     <field name="name">Production Order/action_product_forecast_report (Inventory / Jin - Administrator) (101)</field>
     <field name="model_id" search="[('model', '=', 'mrp.production')]"/>
     <field name="method">action_product_forecast_report</field>
